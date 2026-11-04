@@ -1,0 +1,16 @@
+{
+  "name": "research-harness-simple",
+  "owner": {
+    "name": "Siyi Yu"
+  },
+  "metadata": {
+    "description": "The rh research harness for Claude Code: from a topic, target journal or research direction to a Word outline of the paper."
+  },
+  "plugins": [
+    {
+      "name": "rh",
+      "source": "./",
+      "description": "Research harness: from a topic, target journal or research direction to a Word outline of the paper."
+    }
+  ]
+}
