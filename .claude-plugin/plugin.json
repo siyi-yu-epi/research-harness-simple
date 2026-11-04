@@ -1,0 +1,11 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "rh",
+  "version": "0.1.0",
+  "description": "Research harness: takes a topic, target journal or research direction through venue review, literature review, ideation, research design, analysis and machine review to a Word outline of the paper, with the researcher deciding at three checkpoints.",
+  "author": {
+    "name": "Siyi Yu"
+  },
+  "repository": "https://github.com/siyi-yu-epi/research-harness-simple",
+  "license": "MIT"
+}

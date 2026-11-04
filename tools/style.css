@@ -1,0 +1,49 @@
+/* Stylesheet for pages rendered by render.py. */
+:root {
+  --bg: #fdfcfa; --fg: #1d1d1f; --muted: #5f6368; --rule: #d9d6d0;
+  --accent: #1f5f8b; --code-bg: #f2f0eb; --row: #f7f5f1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1c1e; --fg: #e8e6e3; --muted: #a0a4a8; --rule: #3a3c40;
+    --accent: #7fb3d9; --code-bg: #26282b; --row: #222427;
+  }
+}
+html { background: var(--bg); color: var(--fg); }
+body {
+  max-width: 46rem; margin: 0 auto; padding: 2.5rem 1rem 4rem;
+  font: 1.05rem/1.6 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+h1, h2, h3, h4 {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.25; margin: 2em 0 0.6em;
+}
+h1 { font-size: 1.9rem; margin-top: 0; }
+h2 { font-size: 1.4rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.25em; }
+h3 { font-size: 1.15rem; }
+a { color: var(--accent); }
+p, ul, ol { margin: 0 0 1em; }
+li { margin: 0.25em 0; }
+blockquote { margin: 1em 0; padding: 0 1em; border-left: 3px solid var(--rule); color: var(--muted); }
+code {
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 0.9em;
+  background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px;
+}
+pre { background: var(--code-bg); padding: 0.8em 1em; overflow-x: auto; border-radius: 4px; }
+pre code { padding: 0; background: none; }
+table {
+  border-collapse: collapse; margin: 1.2em 0; display: block; overflow-x: auto;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.9rem;
+}
+th, td { padding: 0.4em 0.75em; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+thead th { border-bottom: 2px solid var(--fg); }
+tbody tr:nth-child(even) { background: var(--row); }
+img { max-width: 100%; height: auto; }
+figure { margin: 1.5em 0; }
+figcaption { color: var(--muted); font-size: 0.9rem; }
+#refs { font-size: 0.92rem; }
+.csl-entry { margin-bottom: 0.5em; padding-left: 1.5em; text-indent: -1.5em; }
+@media print {
+  html { background: #fff; color: #000; }
+  body { max-width: none; }
+}
